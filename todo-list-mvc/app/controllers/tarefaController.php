@@ -22,6 +22,12 @@ private $tarefaModel;
             header("Location: index.php");
     }
 
+    public function index(){
+        $tarefas = $this->tarefaModel->listar();
+        include __DIR__ . '/../views/listar.php';
+
+    }
+
 }
 
 ?>
