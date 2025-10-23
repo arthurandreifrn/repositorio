@@ -8,7 +8,7 @@ class TarefaController {
     }
 
     public function index(){
-        $tarefas = $this->tarefaModel->listar(); 
+        $tarefas = $this->tarefaModel->listarativas(); 
         include __DIR__ . '/../views/listar.php'; 
     }
 
