@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ㅤ</title>
+    <style>
+        :root {
+            --bg-color: #583e58;
+            --square-color: #f3ac3c;
+            --canvas-size: 300px;
+            --square-size: 50px;
+            --margin: 30px;
+        }
+        
+        .canvas {
+            width: var(--canvas-size);
+            height: var(--canvas-size);
+            background-color: var(--bg-color);
+            position: relative;
+            border: 1px solid #333;
+            margin-top: 20px;
+        }
+
+        .square {
+            width: var(--square-size);
+            height: var(--square-size);
+            background-color: var(--square-color);
+            position: absolute;
+        }
+
+        .square-tl {
+            top: var(--margin);
+            left: var(--margin);
+        }
+
+        .square-tr {
+            top: var(--margin);
+            right: var(--margin);
+        }
+
+        .square-bl {
+            bottom: var(--margin);
+            left: var(--margin);
+        }
+
+        .square-br {
+            bottom: var(--margin);
+            right: var(--margin);
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas">
+        <div class="square square-tl"></div>
+        <div class="square square-tr"></div>
+        <div class="square square-bl"></div>
+        <div class="square square-br"></div>
+    </div>
+</body>
+</html>
