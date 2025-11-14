@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Dark Souls I — Classes Iniciais</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+	<style>
+		:root{
+			--bg: #000;
+			--muted: #dcd7d7;
+			--card-border: #414141c9;
+		}
+		html,body{height:100%; margin:0}
+		body{
+			font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+			background:var(--bg);
+			color:var(--muted);
+			-webkit-font-smoothing:antialiased;
+			-moz-osx-font-smoothing:grayscale;
+		}
+		.site-hero{padding:3.5rem 0; text-align:center}
+		.site-hero h1{letter-spacing:1px; font-weight:700; color:#ffffffb7; margin:0}
+		.site-hero p{margin-top:.5rem}
+
+		.card.class-card{
+			background:linear-gradient(180deg,#5f5f5f22,rgba(0,0,0,0.12));
+			border:1px solid var(--card-border);
+			transition:transform .18s ease, box-shadow .18s ease;
+			color:var(--muted);
+		}
+		.card.class-card:hover{transform:translateY(-6px); box-shadow:0 18px 30px rgba(0,0,0,.75)}
+		.class-emoji{font-size:2.2rem}
+		.stat-name{font-size:.85rem}
+		.stat-value{font-weight:700}
+
+		.text-bright{color:#dcd7d7 !important; opacity:0.98; font-weight:500; display:block}
+
+		.btn-wiki{font-size:.8rem; padding:.25rem .5rem}
+		@media (max-width:575px){
+			.site-hero{padding:2rem 0}
+			.class-emoji{font-size:1.8rem}
+		}
+	</style>
+</head>
+<body>
+	<header class="site-hero">
+		<div class="container">
+			<h1>Dark Souls I — Classes Iniciais</h1>
+			<p>Documentação dos atributos das classes do Dark Souls I</p>
+		</div>
+	</header>
+
+	<main class="container mb-5">
+		<section id="classes">
+			<div class="row g-4">
+
+				<!-- Guerreiro -->
+				<div class="col-12 col-sm-6 col-lg-4">
+					<article class="card class-card h-100 p-3 d-flex flex-column">
+						<div class="d-flex align-items-center mb-2">
+							<div class="me-3 class-emoji">🗡️</div>
+							<div class="flex-grow-1">
+								<h5 class="card-title mb-0">Guerreiro</h5>
+								<div class="d-flex align-items-center">
+									<small class="text-bright" style="opacity:.85">Equipamento inicial: machado, escudo</small>
+									<a class="btn btn-sm btn-outline-light btn-wiki ms-2" href="https://darksouls.wiki.fextralife.com/Warrior" target="_blank" rel="noopener">Ver dados avançados</a>
+								</div>
+							</div>
+						</div>
+						<p class="mb-2">Um lutador corpo a corpo equilibrado, focado em Força e Destreza.</p>
+						<div class="mt-auto">
+							<div class="mb-2">
+								<div class="d-flex justify-content-between"><span class="stat-name">STR</span><span class="stat-value">14</span></div>
+								<div class="progress" style="height:8px"><div class="progress-bar bg-warning" style="width:70%"></div></div>
+							</div>
+							<div class="mb-2">
+								<div class="d-flex justify-content-between"><span class="stat-name">DEX</span><span class="stat-value">13</span></div>
+								<div class="progress" style="height:8px"><div class="progress-bar bg-info" style="width:65%"></div></div>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<!-- Cavaleiro -->
+				<div class="col-12 col-sm-6 col-lg-4">
+					<article class="card class-card h-100 p-3 d-flex flex-column">
+						<div class="d-flex align-items-center mb-2">
+							<div class="me-3 class-emoji">🛡️</div>
+							<div class="flex-grow-1">
+								<h5 class="card-title mb-0">Cavaleiro</h5>
+								<div class="d-flex align-items-center">
+									<small class="text-bright">Equipamento inicial: espada, armadura pesada</small>
+									<a class="btn btn-sm btn-outline-light btn-wiki ms-2" href="https://darksouls.wiki.fextralife.com/Knight" target="_blank" rel="noopener">Ver dados avançados</a>
+								</div>
+							</div>
+						</div>
+						<p class="mb-2">Um guerreiro pesadamente armado, com alta Vitalidade e Força; durável, ideal para a linha de frente (tanque).</p>
+						<div class="mt-auto">
+							<div class="mb-2">
+								<div class="d-flex justify-content-between"><span class="stat-name">VIT</span><span class="stat-value">16</span></div>
+								<div class="progress" style="height:8px"><div class="progress-bar bg-danger" style="width:80%"></div></div>
+							</div>
+							<div class="mb-2">
+								<div class="d-flex justify-content-between"><span class="stat-name">STR</span><span class="stat-value">12</span></div>
+								<div class="progress" style="height:8px"><div class="progress-bar bg-warning" style="width:60%"></div></div>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<!-- Caçador -->
+				<div class="col-12 col-sm-6 col-lg-4">
+					<article class="card class-card h-100 p-3 d-flex flex-column">
+						<div class="d-flex align-items-center mb-2">
+							<div class="me-3 class-emoji">🏹</div>
+							<div class="flex-grow-1">
+								<h5 class="card-title mb-0">Caçador</h5>
+								<div class="d-flex align-items-center">
+									<small class="text-bright" style="opacity:.85">Equipamento inicial: arco, armadura leve</small>
+									<a class="btn btn-sm btn-outline-light btn-wiki ms-2" href="https://darksouls.wiki.fextralife.com/Hunter" target="_blank" rel="noopener">Ver dados avançados</a>
+								</div>
+							</div>
+						</div>
+						<p class="mb-2">Especialista à distância, com alta Destreza e agilidade; ideal para combates de alcance e jogadas táticas.</p>
+						<div class="mt-auto">
+							<div class="mb-2">
+								<div class="d-flex justify-content-between"><span class="stat-name">DEX</span><span class="stat-value">15</span></div>
+								<div class="progress" style="height:8px"><div class="progress-bar bg-info" style="width:72%"></div></div>
+							</div>
+							<div class="mb-2">
+								<div class="d-flex justify-content-between"><span class="stat-name">END</span><span class="stat-value">12</span></div>
+								<div class="progress" style="height:8px"><div class="progress-bar bg-success" style="width:60%"></div></div>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<!-- Piromante -->
+				<div class="col-12 col-sm-6 col-lg-4">
+					<article class="card class-card h-100 p-3 d-flex flex-column">
+						<div class="d-flex align-items-center mb-2">
+							<div class="me-3 class-emoji">🔥</div>
+							<div class="flex-grow-1">
+								<h5 class="card-title mb-0">Piromante</h5>
+								<div class="d-flex align-items-center">
+									<small class="text-bright" style="opacity:.85">Equipamento inicial: chama, luva de piromancia</small>
+									<a class="btn btn-sm btn-outline-light btn-wiki ms-2" href="https://darksouls.wiki.fextralife.com/Pyromancer" target="_blank" rel="noopener">Ver dados avançados</a>
+								</div>
+							</div>
+						</div>
+						<p class="mb-2">Piromantes mesclam magia e combate corpo a corpo; fortes em feitiços de curto alcance e piromancias simples.</p>
+						<div class="mt-auto">
+							<div class="mb-2">
+								<div class="d-flex justify-content-between"><span class="stat-name">INT</span><span class="stat-value">12</span></div>
+								<div class="progress" style="height:8px"><div class="progress-bar bg-secondary" style="width:60%"></div></div>
+							</div>
+							<div class="mb-2">
+								<div class="d-flex justify-content-between"><span class="stat-name">FTH</span><span class="stat-value">9</span></div>
+								<div class="progress" style="height:8px"><div class="progress-bar bg-primary" style="width:45%"></div></div>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<!-- Clérigo -->
+				<div class="col-12 col-sm-6 col-lg-4">
+					<article class="card class-card h-100 p-3 d-flex flex-column">
+						<div class="d-flex align-items-center mb-2">
+							<div class="me-3 class-emoji">✝️</div>
+							<div class="flex-grow-1">
+								<h5 class="card-title mb-0">Clérigo</h5>
+								<div class="d-flex align-items-center">
+									<small class="text-bright" style="opacity:.85">Equipamento inicial: talismã, maça</small>
+									<a class="btn btn-sm btn-outline-light btn-wiki ms-2" href="https://darksouls.wiki.fextralife.com/Cleric" target="_blank" rel="noopener">Ver dados avançados</a>
+								</div>
+							</div>
+						</div>
+						<p class="mb-2">Clérigos focam na Fé e em milagres — excelentes como apoiadores e curandeiros em jogos de RPG de mesa.</p>
+						<div class="mt-auto">
+							<div class="mb-2">
+								<div class="d-flex justify-content-between"><span class="stat-name">FTH</span><span class="stat-value">14</span></div>
+								<div class="progress" style="height:8px"><div class="progress-bar bg-primary" style="width:70%"></div></div>
+							</div>
+							<div class="mb-2">
+								<div class="d-flex justify-content-between"><span class="stat-name">VIT</span><span class="stat-value">11</span></div>
+								<div class="progress" style="height:8px"><div class="progress-bar bg-danger" style="width:52%"></div></div>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<!-- Despojado -->
+				<div class="col-12 col-sm-6 col-lg-4">
+					<article class="card class-card h-100 p-3 d-flex flex-column">
+						<div class="d-flex align-items-center mb-2">
+							<div class="me-3 class-emoji">⚫</div>
+							<div class="flex-grow-1">
+								<h5 class="card-title mb-0">Despojado</h5>
+								<div class="d-flex align-items-center">
+									<small class="text-bright" style="opacity:.85">Equipamento inicial: sem equipamentos, atributos equilibrados</small>
+									<a class="btn btn-sm btn-outline-light btn-wiki ms-2" href="https://darksouls.wiki.fextralife.com/Deprived" target="_blank" rel="noopener">Ver dados avançados</a>
+								</div>
+							</div>
+						</div>
+						<p class="mb-2">A classe "Despojado" com atributos equilibrados — ótima para jogadores que desejam criar builds personalizados.</p>
+						<div class="mt-auto">
+							<div class="mb-2">
+								<div class="d-flex justify-content-between"><span class="stat-name">Balanced</span><span class="stat-value">Even</span></div>
+								<div class="progress" style="height:8px"><div class="progress-bar" style="width:50%; background:#808080"></div></div>
+							</div>
+						</div>
+					</article>
+				</div>
+
+			</div>
+		</section>
+	</main>
+</body>
+</html>
